@@ -17,7 +17,6 @@ import org.andengine.entity.scene.IOnSceneTouchListener;
 import org.andengine.entity.scene.Scene;
 import org.andengine.entity.scene.background.Background;
 import org.andengine.entity.sprite.AnimatedSprite;
-import org.andengine.entity.sprite.Sprite;
 import org.andengine.entity.util.FPSLogger;
 import org.andengine.extension.physics.box2d.PhysicsConnector;
 import org.andengine.extension.physics.box2d.PhysicsFactory;
@@ -45,7 +44,7 @@ public class PhysicsExample extends SimpleBaseGameActivity implements IOnSceneTo
 	// Constants
 	// ===========================================================
 
-	private static final int CAMERA_WIDTH = 1000;
+	private static final int CAMERA_WIDTH = 720;
 	private static final int CAMERA_HEIGHT = 480;
 
 	private static final FixtureDef FIXTURE_DEF = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
@@ -105,8 +104,8 @@ public class PhysicsExample extends SimpleBaseGameActivity implements IOnSceneTo
 //		this.mScene.attachChild(left);
 //		this.mScene.attachChild(right);
 
-		Sprite _Sprite = new Sprite(100f, 100f, this.mBoxFaceTextureRegion, this.getVertexBufferObjectManager());
-		this.mScene.attachChild(_Sprite);
+//		Sprite _Sprite = new Sprite(100f, 100f, this.mBoxFaceTextureRegion, this.getVertexBufferObjectManager());
+//		this.mScene.attachChild(_Sprite);
 
 		this.mScene.registerUpdateHandler(this.mPhysicsWorld);
 
